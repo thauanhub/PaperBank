@@ -1,6 +1,7 @@
 body{
-    background-color: #ccc;
+    background-color: rgb(29, 29, 29);
     margin: 0;
+    color: white;
 }
 
 h1{
@@ -19,21 +20,22 @@ ul{
     width: max-content;
     margin-top: 2rem;
     margin: auto;
+    gap: 16px;
+
 }
 
 a{
-    background-color: greenyellow;
     text-decoration: none;
     padding: 8px;
-    color: black;
+    color: white;
 }
 
 a:hover{
-    background-color: rgb(219, 240, 187);
+    text-decoration: underline;
 }
 
 header{
-    background-color: rgb(208, 252, 132);
+    background-color: green;
     margin: 0;
     padding: 16px;
     display: flex;
