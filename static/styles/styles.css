@@ -1,0 +1,42 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav-menu, .header-nav-config{
+    display: flex;
+    justify-content: space-evenly;
+    width: max-content;
+    margin-top: 2rem;
+    margin: auto;
+}
+
+a{
+    background-color: greenyellow;
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+
+a:hover{
+    background-color: rgb(219, 240, 187);
+}
+
+header{
+    background-color: rgb(208, 252, 132);
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
