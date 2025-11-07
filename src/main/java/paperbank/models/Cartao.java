@@ -1,4 +1,7 @@
 package paperbank.models;
+import org.javamoney.moneta.Money;
+import java.util.Date;
+
 
 public class Cartao {
     private int numeroCartao;
