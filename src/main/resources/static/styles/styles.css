@@ -39,7 +39,7 @@ a:hover{
     text-decoration: underline;
 }
 
-header{
+.header{
     background-color: green;
     margin: 0;
     padding: 16px;
@@ -63,9 +63,29 @@ header{
     color: darkgray;
 }
 
-.main-mid{
+
+.main-container-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-container-content-saldo{
     background-color: #496550;
     width: 35%;
     height: 240px;
     margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.main-container-content-historico{
+    background-color: #496550;
+    width: 35%;
+    height: 240px;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.main-container-actions{
+    width: 60%;
+    margin-left: 152px;
 }
