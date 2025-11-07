@@ -1,7 +1,6 @@
 package paperbank.models;
 
-
-import javax.xml.crypto.Data;
+import org.javamoney.moneta.Money;
 import java.util.Date;
 
 public class Transacao {
