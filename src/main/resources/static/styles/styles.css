@@ -2,9 +2,14 @@ body{
     background-color: rgb(29, 29, 29);
     margin: 0;
     color: white;
+    font-family: sans-serif;
 }
 
 h1{
+    margin: 0;
+}
+
+p{
     margin: 0;
 }
 
@@ -41,4 +46,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-top{
+    background-color: #496550;
+    padding: 32px;
+    margin-bottom: 2rem;
+}
+
+.main-top-saudacao{
+    font-size: 48px;
+}
+
+.main-top-descricao{
+    font-size: 24px;
+    color: darkgray;
+}
+
+.main-mid{
+    background-color: #496550;
+    width: 35%;
+    height: 240px;
+    margin-bottom: 2rem;
 }
