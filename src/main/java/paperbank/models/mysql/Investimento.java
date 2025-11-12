@@ -1,0 +1,34 @@
+package paperbank.models.mysql;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
+import lombok.Data;
+import javax.money.MonetaryAmount;
+import java.time.LocalDateTime;
+
+@Data
+@Entity
+@Table(name = "investimento")
+public class Investimento {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT [cite: 379]
+    private Long idInvestimento;
+
+    @Column(nullable = false, length = 100)
+    private String tipo;
+
+    @Column(nullable = false, precision = 15, scale = 2)
+    private MonetaryAmount valorAplicado; // Mapeia DECIMAL(15,2) [cite: 381]
+
+    @Column
+    private Float rentabilidade;
+
+    @Column(nullable = false)
+    private LocalDateTime dataAplicacao;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "fk_numeroConta", nullable = false) // FOREIGN KEY [cite: 384, 386]
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "investimentos", "emprestimos", "cliente"})
+    private ContaBancaria contaBancaria;
+}
